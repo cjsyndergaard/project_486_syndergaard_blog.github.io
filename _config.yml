@@ -23,7 +23,8 @@ email: cjsyndergaard@gmail.com
 description: "Made exclusively because I couldn't get Streamlit Dashboards to Work" 
 baseurl: "project_486_syndergaard_blog.github.io" # the name of the repository 
 url: "https://cjsyndergaard.github.io" #  change this to "https://<your-github-username>.github.io"
-image: https://source.unsplash.com/random
+# image: https://source.unsplash.com/random
+image: "/assets/images/ml_post.png"
 author: Colton Syndergaard
 copyright:  # Your initials or what you want the copyright to be.  Leave empty for no copyright
 # footer_description: 'The default image for the site header is a random image from 
