@@ -22,7 +22,7 @@ To examine preliminary seperability, a simple random forest model was fit, attem
 
 ![Initial Classification for all the Genres]({{site.url}}/{{site.baseurl}}/assets/images/figures/cm_other/init_rf.png)
 
-## Super Genre vs Clustering.
+## Super Genre vs Clustering
 I decided to approach this feature engineering in two ways - the first a guided approach, using copious research into musical genre, and the second using unsupervised learning to find "naturally" clustered overarching genres. I would then compare each model on the two different output possibilities, and see if the increase in accuracy that I would undoubtedly gain would be worth the loss of interpretibility from the super genres.
 
 I went through each of the genres present in the data, and assigned them to 8 super-genres. These super genres were 
@@ -59,7 +59,7 @@ From the Super Genre Centroids, we can see that folk music is characterized by a
 
 From the Cluster Genre Centroids we can see some interesting aspects as well, though there are no natural explanations to be had for why each cluster behaves how it does like with super genre. Several of the clusters are remarkably similar, being different only on a handful of axes, such as clustered genres 0 and 6, whereas some follow reminiscent behaviors, simply being exactly the opposite, likely lying along the other end of the same axis of the principal components, like clustered genres 5 and 6 being centered at a point that looks like -1 times the other.
 
-## Modelling
+## Modeling
 Several types of models were used to explore the data using these competing labels. Naturally, it was expected that the natural clusters would provide easier to predict categories, however I wanted to see if the gain in accuracy for that grouping would be worth the relative lack of interpretability. Thus, the primary competing factor would be the labels, not the models themselves. This would be judged using the out-of-sample accuracy (as in-sample accuracy was always very high), and here I will report the best model type (being random forest in both cases).
 
 The out-of-sample prediction accuracy for the super genre label was 62.4% - much better than when being predicted across all possible genres, however it was not phenomenal. In particular it appears that many genres were misclassified as electronic music (the confusion matrix below has the classes in the same order that they're listed above). It seems that the intelligently labelled genres are insufficient for several possible reasons. Manual attempts to classify music often fall short of the artistic vision, and emotions that are evoked by a work.
