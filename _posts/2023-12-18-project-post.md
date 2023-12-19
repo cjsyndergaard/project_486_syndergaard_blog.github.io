@@ -16,9 +16,9 @@ The data contain tracks collected from Spotify, with their associated song metri
 
 The genres were not evenly distributed throughout the dataset, following the distribution below:
 
-`![Genre Distribution](/assets/images/figures/cm_other/genre_distribution.png)`
+`![Genre Distribution]({{site.url}}/{{site.baseurl}}/assets/images/figures/cm_other/genre_distribution.png)`
 
-To examine preliminary seperability, a simple random forest model was fit, attempting to determine how separable these genres were. 
+To examine preliminary seperability, a simple random forest model was fit, attempting to determine how separable these genres were. Though it was entirely possible to somewhat separate the genres (with an out of sample accuracy rate of just under 50%, much better than random guessing with this many categories), it was still very difficult to 
 
 
 
